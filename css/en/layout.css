@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/***** common *****/
+#wrap {width:100%; height:auto; position:relative; overflow:hidden;}
+.al_box {max-width:1280px; height:auto; margin:0 auto; position:relative; z-index:10;}
+.al_box:after {content:""; display:block; clear:both;}
+
+
+/***** header *****/
+#rwd_header {display:none;}
+.tm_mob { display:none;}
+
+#header {width:100%; height:122px; position:relative; z-index:102; background:url(https://plus.cnu.ac.kr/images/en/common/header_bg.gif) repeat-x left top;}
+#header .pop_btn {display:inline-block; position:absolute; left:0; top:0; height:37px; line-height:37px; background:#ececec url(https://plus.cnu.ac.kr/images/en/common/pop_open_bul.png) no-repeat 86% 50%; padding:0 32px 0 15px; font-weight:600;}
+#header .pop_btn_x {display:inline-block; position:absolute; left:0; top:0; height:37px; line-height:37px; background:#ececec url(https://plus.cnu.ac.kr/images/en/common/pop_close_bul.gif) no-repeat 86% 50%; padding:0 32px 0 15px; font-weight:600; display:none;}
+#header h1 {position:absolute; left:0px; top:55px; z-index:1; width:216px; height:41px;}
+#header h1 a {display:block; width:216px; height:41px;}
+.top_util {position:absolute; right:0px; top:0px; width:auto; height:37px;}
+.top_util li {float:left; height:37px; background:url(https://plus.cnu.ac.kr/images/en/common/top_menu_bar.gif) no-repeat left 15px;}
+.top_util li:first-child {background:none;}
+.top_util li a {display:block; padding:0 10px; font-size:0.95em; height:37px; line-height:37px; font-weight:600;}
+
+.find_m_btn {display:inline-block; vertical-align:top; position:absolute; right:51px; top:0; z-index:90; background:#d94f4f url(https://plus.cnu.ac.kr/images/en/common/find_menu_bul.png) no-repeat 10px top; padding:0 15px 0 40px; color:#fff !important; height:37px; line-height:37px; font-weight:600;}
+.find_m_btn:hover, .find_m_btn:active, .find_m_btn:focus {background:#c34545 url(https://plus.cnu.ac.kr/images/en/common/find_menu_bul.png) no-repeat 10px top;}
+.find_menu {position:absolute; left:0; top:37px; width:100%; height:auto; background:#fff; z-index:999; display:none;}
+.find_menu ul {width:100%; background:#d94f4f url(https://plus.cnu.ac.kr/images/en/common/find_menu_bg.gif) no-repeat left top;}
+.find_menu ul:after {content:""; display:block; clear:both;}
+.find_menu ul li {float:left; width:25%;}
+.find_menu ul li strong {color:#fff; display:block; text-align:center; font-size:1.143em; padding:10px 0;}
+.find_menu ul li ul {background:#fff; padding:15px 0;}
+.find_menu ul li ul.bg {background:#f2f2f2 none;}	
+.find_menu ul li ul li {float:left; width:39%; margin:0 4% 1px 7%; line-height:normal;}
+.find_menu ul li ul li a {display:inline-block; vertical-align:top; font-size:0.929em; padding:5px;}
+.find_menu ul li ul li a:hover, .find_menu ul li ul li a:active, .find_menu ul li ul li a:focus {background:#d94f4f; color:#fff; text-decoration:none;}
+.find_menu .close_btn {width:100%; background:#d4d4d4; text-align:center;}
+.find_menu .close_btn a {display:inline-block; vertical-align:top; padding:8px 10px 8px 30px; font-weight:600; color:#464646; background:url(https://plus.cnu.ac.kr/images/en/common/find_menu_close_bul.gif) no-repeat 10px 13px;}
+
+.search_btn {display:inline-block; vertical-align:top; position:absolute; right:0; top:0; z-index:90; background:#5f5f5f url(https://plus.cnu.ac.kr/images/en/common/search_btn_bul.png) no-repeat center top; width:49px; height:37px;}
+.search_btn:hover, .search_btn:active, .search_btn:focus {background:#464646 url(https://plus.cnu.ac.kr/images/en/common/search_btn_bul.png) no-repeat center top;}
+.search_btn.ov {background:#04adbf url(https://plus.cnu.ac.kr/images/en/common/search_btn_bul.png) no-repeat center top;}
+
+.search_total {position:absolute; left:0; top:37px; width:100%; height:auto; background:#04adbf; z-index:999; display:none;}
+.search_form {width:710px; padding:20px 0; margin:0 auto;}
+.search_form:after {content:""; display:block; clear:both;}
+.search_form input[type="text"] {width:590px; height:40px; line-height:40px; border:0; font-size:1.143em; display:inline-block; vertical-align:top; float:left;}
+.search_form input[type="submit"] {background:#464646; border:0; color:#fff; cursor:pointer; font-size:1.143em; height:40px; padding:0 20px; display:inline-block; vertical-align:top; float:left; margin-left:10px;} 
+.search_total .close_btn {width:100%; background:#d4d4d4; text-align:center;}
+.search_total .close_btn a {display:inline-block; vertical-align:top; padding:8px 10px 8px 30px; font-weight:600; color:#464646; background:url(https://plus.cnu.ac.kr/images/en/common/find_menu_close_bul.gif) no-repeat 10px 13px;}
+.shadow_bg {width:100%; height:100%; position:fixed; left:0; top:0; background:#000; opacity:0.6; filter:alpha(opacity=60); z-index:200; display:none;}
+
+#gnb {position:relative; top:37px; left:0; width:100%; height:auto; z-index:1;}
+#gnbwrap {position:relative; width:100%; height:85px;}
+#tm {max-width:940px; height:100%; margin:0 auto; z-index:950; position:relative; padding:0 0 0 340px;}
+#tm:after {content:""; clear:both; display:block;}
+#tm li.th1 {float:left; width:auto; margin:0 13px;}
+#tm li.th1 .special_m {position:absolute; left:0; width:315px; top:86px; height:100%; z-index:990; background:url(../../images/en/common/special_m_bg.png) no-repeat right top;}
+#tm li.th1 .special_m p {color:#fff; font-size:1.4em; line-height:1.286em; margin:30px 0 20px 0;}
+#tm li.th1 .special_m p strong {display:block; font-size:1.8em; line-height:1em; font-weight:600; padding-top:15px; margin-top:15px; background:url(../../images/en/common/gnb_titlebg.gif) no-repeat left top;}
+#tm li.th1 .special_m span {display:block;}
+#tm li.th1 .special_m span a {display:inline-block; margin-bottom:5px; vertical-align:top; color:#fff; border:2px solid #cddadf; background:url(../../images/en/common/special_btn_bul.gif) no-repeat 90% 50%; padding:5px 30px 5px 10px; margin-right:10px; height:auto;}
+#tm li.th1 a.th1_lnk {display:block; height:86px; line-height:86px; padding:0 15px; text-align:center; font-weight:600; font-size:1.286em; text-decoration:none;}
+#tm li.th1 a.current, #tm li.th1 a:hover, #tm li.th1 a:active, #tm li.th1 a:focus {border-bottom:4px solid #0074a5; height:82px; color:#0074a5;}
+#tm li.th1 ul.th2 {width:965px; position:absolute; left:315px; top:86px; padding-top:30px; height:100%; background:#fff;}
+#tm li.th1 ul.th2:after {content:""; display:block; clear:both;}
+#tm li.th1 ul.th2 li {float:left; width:22%; margin:0 1% 20px 2%;}
+#tm li.th1 ul.th2 li a {display:block; color:#0072a5; font-weight:600; font-size:1em; height:auto; padding:8px 10px; line-height:normal; background:#e6edf0;}
+#tm li.th1 ul.th2 li a.on, #tm li.th1 ul.th2 li a:hover, #tm li.th1 ul.th2 li a:active, #tm li.th1 ul.th2 li a:focus {color:#0066a6; text-decoration:underline; background:#dae1e4; border-bottom:0;}
+#tm li.th1 ul.th2 li a[target="_blank"] {background:#e6edf0 url(../../images/en/common/blank_ico.gif) no-repeat 90% 50%;}
+#tm li.th1 ul.th2 li a[target="_blank"]:hover, #tm li.th1 ul.th2 li a[target="_blank"]:active, #tm li.th1 ul.th2 li a[target="_blank"]:focus {color:#0066a6; background:#dae1e4 url(../../images/en/common/blank_ico.gif) no-repeat 90% 50%;}
+#tm li.th1 ul.th2 li ul {position:relative; width:100%; padding:10px 0 0 0;}
+#tm li.th1 ul.th2 li ul li {float:none; width:auto; margin:0;}
+#tm li.th1 ul.th2 li ul li a {display:inline-block; color:#636363; font-weight:normal; font-size:0.929em; padding:0 10px; background:none;}
+#tm li.th1 ul.th2 li ul li a.on, #tm li.th1 ul.th2 li ul li a:hover, #tm li.th1 ul.th2 li ul li a:active, #tm li.th1 ul.th2 li ul li a:focus {color:#0070a4; background:none;}
+#tm li.th1 ul.th2 li ul li a[target="_blank"] {background:url(../../images/en/common/blank_ico.gif) no-repeat 90% 50%; padding:0 40px 0 10px;}
+#tm li.th1 ul.th2 li ul li a[target="_blank"]:hover, #tm li.th1 ul.th2 li ul li a[target="_blank"]:active, #tm li.th1 ul.th2 li ul li a[target="_blank"]:focus {color:#0070a4; background:url(../../images/en/common/blank_ico.gif) no-repeat 90% 50%;}
+#animate {position:absolute; top:0px; left:0; width:100%; height:85px; background:#fff url(../../images/en/common/gnb_animate_bg.gif) repeat-x left top; overflow:hidden; z-index:998; z-index:101; border-bottom:1px solid #c6c6c6;}
+.animate_line {width:50%; height:500px; background:url(../../images/en/common/gnb_patternbg.gif) repeat; position:absolute; left:0; top:86px;}
+
+#tm #summery1 {}
+#tm #summery1 li {min-height:155px;}
+#tm #summery1 li ul li {min-height:10px;}
+#tm #summery2 {}
+#tm #summery3 {}
+#tm #summery4 li {min-height:210px;}
+#tm #summery4 li ul li {min-height:10px;}
+#tm #summery5 {}
+#tm #summery6 {}
+#tm #summery6 li {min-height:155px;}
+#tm #summery6 li ul li {min-height:10px;}
+#tm #summery7 {}
+#tm #summery7 li {min-height:50px;}
+#tm #summery7 li ul li {min-height:10px;}
+
+
+/***** container *****/
+#main_container {width:100%; height:auto; padding:45px 0 0 0; position:relative; background:#d7d7d7 url(https://plus.cnu.ac.kr/images/en/main/main_visualbg.jpg) no-repeat center top;}
+#main_container #contents {width:1280px; height:auto; margin:0 auto; float:none; padding:0; background:none; position:relative;}
+#main_container #contents:after {content:""; display:block; clear:both;}
+#main_container #contents h4 {margin:0 0 20px 0;}
+
+#container {width:100%; height:auto; padding:45px 0 0 0; position:relative; background:#d7d7d7;}
+#container .sub_vi {background:#607d9d url(https://plus.cnu.ac.kr/images/en/common/sub_vi.jpg) no-repeat center top; position:absolute; left:0; top:0; width:100%; height:312px;}
+#container .al_box {background:url(https://plus.cnu.ac.kr/images/en/common/contents_bg.gif) no-repeat left top;}
+
+	/** left menu **/
+	#lnb {width:230px; height:auto; margin-right:20px; float:left;} 
+	#lnb h2 {height:214px; text-align:center; color:#fff; font-size:2.57em; font-weight:600; line-height:normal;}
+	#lnb h2 span {display:inline-block; border-top:9px solid #0f4163; padding:75px 5px 0 5px; vertical-align:top;}
+	#lnb h2.vi01 {background:url(https://plus.cnu.ac.kr/images/en/common/lnb_titlebg_text01.jpg) no-repeat;}
+	#lnb h2.vi02 {background:url(https://plus.cnu.ac.kr/images/en/common/lnb_titlebg_text02.jpg) no-repeat;}
+	#lnb h2.vi03 {background:url(https://plus.cnu.ac.kr/images/en/common/lnb_titlebg_text03.jpg) no-repeat;}
+	#lnb h2.vi04 {background:url(https://plus.cnu.ac.kr/images/en/common/lnb_titlebg_text04.jpg) no-repeat;}
+	#lnb h2.vi05 {background:url(https://plus.cnu.ac.kr/images/en/common/lnb_titlebg_text05.jpg) no-repeat;}
+	#lnb h2.vi06 {background:url(https://plus.cnu.ac.kr/images/en/common/lnb_titlebg_text06.jpg) no-repeat;}
+	#lnb h2.vi07 {background:url(https://plus.cnu.ac.kr/images/en/common/lnb_titlebg_text07.jpg) no-repeat;}
+	#lnb h2.vi08 {background:url(https://plus.cnu.ac.kr/images/en/common/lnb_titlebg_text08.jpg) no-repeat;}
+	
+	#lm{width:100%; border-top:12px solid #405e7e; padding-bottom:50px;}
+	#lm li {width:100%; border-bottom:1px solid #ebebeb; background:#fff;}
+	#lm li a {padding:8px 15px 8px 15px; display:block; font-size:1.071em; font-weight:600; word-break:break-word;}
+	#lm li a[target="_blank"] {background:url(../../images/en/common/blank_ico.gif) no-repeat 92% 50%;}
+	#lm li a.ov, #lm li a:hover, #lm li a:active, #lm li a:focus {border-left:5px solid #d94f4f; padding-left:10px; background:url(https://plus.cnu.ac.kr/images/en/common/lnb_depth2_bul.gif) no-repeat 93% 50%; color:#d94f4f; text-decoration:none;}
+	#lm li ul {display:none; width:auto; background:#f7f7f7; height:auto; padding:5px 0; border-top:1px solid #ebebeb; border-left:5px solid #d94f4f;}
+	#lm li ul li {background:none; border-bottom:0; background:url(https://plus.cnu.ac.kr/images/en/common/lnb_depth3_bul.gif) no-repeat 10px 50%;}
+	#lm li ul li a {font-size:0.929em; padding:5px 10px 5px 20px; width:auto; display:block; font-weight:normal; line-height:1.429em;}
+	#lm li ul li a.ov, #lm li ul li a:hover, #lm li ul li a:active, #lm li ul li a:focus {background:none; color:#d94f4f; text-decoration:underline; border-left:0; padding:5px 10px 5px 20px;}
+	#lm li ul li a[target="_blank"] {background:url(../../images/en/common/blank_ico.gif) no-repeat 92% 50%;}
+	
+	/** contents **/
+	#contents {width:1030px; height:auto; float:left; background:#fff; position:relative;}
+	
+	.location {position:relative; border-bottom:1px solid #cdcdcd; padding:30px 40px 0 40px; height:97px;}
+	.location h3.cont_title {font-size:2.643em; line-height:normal; margin:0;}
+	.location #path { margin-top:20px; }
+	.location #path a {display:inline-block; vertical-align:top; font-size:0.929em;}
+	.location #path .navi_home{background:url(https://plus.cnu.ac.kr/images/en/common/home_ico.gif) no-repeat left 4px; padding:0 0 0 18px;}
+	.location #path .navi_ov{ font-weight:600; color:#d94f4d;}
+
+
+	.location .navi {width:100%; margin-top:20px;}
+	.location .navi:after {content:""; display:block; clear:both;}
+	.location .navi li {float:left; background:url(https://plus.cnu.ac.kr/images/en/common/navi_bul.gif) no-repeat left 50%; padding:0 7px 0 12px; line-height:normal;}
+	.location .navi li.home {background:none; padding:2px 7px 0 3px;}
+	.location .navi li a {display:inline-block; vertical-align:top; font-size:0.929em;}
+	.location .navi li a strong {color:#d94f4d;}
+	.location .navi li.home a {background:url(https://plus.cnu.ac.kr/images/en/common/home_ico.gif) no-repeat; width:13px; height:17px;}
+	.location .sns {position:absolute; right:40px; top:30px;}
+	.location .sns dd {float:left; margin-left:4px;}
+	.location .sns dd a {display:block; width:30px; height:31px; background:url(https://plus.cnu.ac.kr/images/en/common/sns_bg.png) no-repeat;}
+	.location .sns dd.fb a {background-position:-33px 0;}
+	.location .sns dd.tt a {background-position:0 0;}
+	.location .sns dd.pr a {background-position:-67px 0;}
+	.location .sns dd a span {width:0; height:0; line-height:0; font-size:0px; float:left; position:absolute; visibility:hidden; overflow:hidden;}
+	
+	.content {width:950px; height:auto; position:relative; padding:45px 40px; }
+	
+	/* 담당부서 */
+	#department {border:1px solid #e5e5e3; padding:5px 15px; position:relative; margin-top:60px;}
+	#department p {background:url(https://plus.cnu.ac.kr/images/en/common/call_ico.jpg) no-repeat left top; padding:0 0 0 45px; margin:0; height:39px; line-height:39px; font-size:0.929em;}
+	#department .top_btn {position:absolute; right:15px; top:5px; display:block; background:url(https://plus.cnu.ac.kr/images/en/common/top_btn.jpg) no-repeat; width:39px; height:39px;} 
+	
+
+/***** aside *****/
+#aside {width:100%; height:auto; background:#4b4f5b url(https://plus.cnu.ac.kr/images/en/common/aside_bg.jpg) repeat center top; padding:20px 0; position:relative; z-index:101;}	
+#aside .al_box {height:220px;}
+	#aside .map {width:420px; background:#fff; float:left;} /* ㄷ */
+#aside .map #map_canvas {border:5px solid #4da8b2; height:210px;}
+	.link_m {/*width:830px;*/ width:777px; height:220px; float:left; margin-left:15px; padding:0px 0 0 0; position:relative;} /* ㄷ */
+
+	.banner_3 {position:relative; width:745px; height:190px; float:left; padding:15px 25px;}
+	.banner_3  .banner{clear:both; width:100%;}
+	.banner_3  .banner div {overflow:hidden;}
+	.banner_3  .banner ul {height:280px; overflow:hidden;}
+	.banner_3  .banner ul:after {content:""; display:block; clear:both;}
+	.banner_3  .banner ul li {position:relative; float:left; width:230px; height:200px; margin:0 0 8px 26px; line-height:57px; font-size:14px;}
+	.banner_3  .banner ul li:first-child {margin-left:0px;}
+	.banner_3  .banner ul li a {display:block; margin-bottom:10px; text-align:center; color:#fff; height:57px; line-height:57px; border:1px solid #71747d;}
+	.banner_3  .banner ul li a:hover, .banner_3  .banner ul li a:active, .banner_3  .banner ul li a:focus {}
+	.banner_3 .lbtn {top:40px !important; left:-49px; display:none !important;}
+	.banner_3 .rbtn {top:40px !important; right:-49px; display:none !important;}
+	
+	#aside .btn {background:#d94e4e url(https://plus.cnu.ac.kr/images/en/common/aside_close_bul.gif) no-repeat center 50%; display:block; width:42px; height:40px; position:absolute; right:50%; margin-right:-640px; top:0; z-index:700;}	
+	#aside .btn.open {background:#d94e4e url(https://plus.cnu.ac.kr/images/en/common/aside_open_bul.gif) no-repeat center 50%;}
+
+/***** footer *****/
+#footer {width:100%; height:auto; background:#3c404c; padding:20px 0 30px 0; position:relative; border-top:1px solid #383c45;}
+#footer .al_box {background:url(https://plus.cnu.ac.kr/images/en/common/footer_logo.png) no-repeat left center;}
+.footer_m {width:auto; padding-bottom:20px;}
+.footer_m:after {content:""; display:block; clear:both;}
+.footer_m li {float:left; background:url(https://plus.cnu.ac.kr/images/en/common/footer_m_bul.gif) no-repeat left 4px;}
+.footer_m li:first-child {background:none;}
+.footer_m li a {padding:0 10px; display:block; font-size:0.875em; color:#d8d9db;}
+.footer_m li:first-child a {color:#f75d5d; padding:0 10px 0 0;}
+
+#footer address {font-size:0.875em; line-height:normal; display:block; color:#777a83; margin-left:210px; text-align:right;}
+#footer p {color:#777a83; font-size:0.875em; line-height:normal; margin:5px 0 0 210px; text-align:right;}
